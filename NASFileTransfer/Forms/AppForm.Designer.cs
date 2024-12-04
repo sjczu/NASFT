@@ -1,32 +1,9 @@
-﻿
-namespace NASFileTransfer.Forms
+﻿namespace NASFileTransfer.Forms
 {
     partial class AppForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        // Other code remains the same...
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.btnLogin = new System.Windows.Forms.Button();
@@ -54,13 +31,13 @@ namespace NASFileTransfer.Forms
             // 
             // btnLogin
             // 
-            this.btnLogin.AccessibleDescription = "login button";
+            this.btnLogin.AccessibleDescription = "Login button";
             this.btnLogin.AccessibleName = "btnLogin";
             this.btnLogin.Location = new System.Drawing.Point(466, 50);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(105, 30);
             this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "btnLogin";
+            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -71,7 +48,6 @@ namespace NASFileTransfer.Forms
             this.usrEmailTextBox.Name = "usrEmailTextBox";
             this.usrEmailTextBox.Size = new System.Drawing.Size(190, 20);
             this.usrEmailTextBox.TabIndex = 1;
-            this.usrEmailTextBox.TextChanged += new System.EventHandler(this.usrEmailTextBox_TextChanged);
             // 
             // btnTransfer
             // 
@@ -80,7 +56,7 @@ namespace NASFileTransfer.Forms
             this.btnTransfer.Name = "btnTransfer";
             this.btnTransfer.Size = new System.Drawing.Size(75, 23);
             this.btnTransfer.TabIndex = 2;
-            this.btnTransfer.Text = "btnTransfer";
+            this.btnTransfer.Text = "Transfer";
             this.btnTransfer.UseVisualStyleBackColor = true;
             this.btnTransfer.Click += new System.EventHandler(this.btnTransfer_Click);
             // 
@@ -91,7 +67,7 @@ namespace NASFileTransfer.Forms
             this.btnManagePaths.Name = "btnManagePaths";
             this.btnManagePaths.Size = new System.Drawing.Size(75, 23);
             this.btnManagePaths.TabIndex = 3;
-            this.btnManagePaths.Text = "btnManagePaths";
+            this.btnManagePaths.Text = "Manage Paths";
             this.btnManagePaths.UseVisualStyleBackColor = true;
             this.btnManagePaths.Click += new System.EventHandler(this.btnManagePaths_Click);
             // 
@@ -109,9 +85,9 @@ namespace NASFileTransfer.Forms
             this.saveToLabel.AutoSize = true;
             this.saveToLabel.Location = new System.Drawing.Point(592, 150);
             this.saveToLabel.Name = "saveToLabel";
-            this.saveToLabel.Size = new System.Drawing.Size(69, 13);
+            this.saveToLabel.Size = new System.Drawing.Size(46, 13);
             this.saveToLabel.TabIndex = 5;
-            this.saveToLabel.Text = "saveToLabel";
+            this.saveToLabel.Text = "Save To";
             // 
             // gdriveFilesLabel
             // 
@@ -119,9 +95,9 @@ namespace NASFileTransfer.Forms
             this.gdriveFilesLabel.AutoSize = true;
             this.gdriveFilesLabel.Location = new System.Drawing.Point(122, 119);
             this.gdriveFilesLabel.Name = "gdriveFilesLabel";
-            this.gdriveFilesLabel.Size = new System.Drawing.Size(83, 13);
+            this.gdriveFilesLabel.Size = new System.Drawing.Size(64, 13);
             this.gdriveFilesLabel.TabIndex = 6;
-            this.gdriveFilesLabel.Text = "gdriveFilesLabel";
+            this.gdriveFilesLabel.Text = "Google Drive Files";
             // 
             // loggedInAsLabel
             // 
@@ -129,9 +105,9 @@ namespace NASFileTransfer.Forms
             this.loggedInAsLabel.AutoSize = true;
             this.loggedInAsLabel.Location = new System.Drawing.Point(178, 59);
             this.loggedInAsLabel.Name = "loggedInAsLabel";
-            this.loggedInAsLabel.Size = new System.Drawing.Size(86, 13);
+            this.loggedInAsLabel.Size = new System.Drawing.Size(70, 13);
             this.loggedInAsLabel.TabIndex = 7;
-            this.loggedInAsLabel.Text = "loggedInAsLabel";
+            this.loggedInAsLabel.Text = "Logged in as:";
             // 
             // storageTypeLabel
             // 
@@ -139,9 +115,9 @@ namespace NASFileTransfer.Forms
             this.storageTypeLabel.AutoSize = true;
             this.storageTypeLabel.Location = new System.Drawing.Point(595, 197);
             this.storageTypeLabel.Name = "storageTypeLabel";
-            this.storageTypeLabel.Size = new System.Drawing.Size(92, 13);
+            this.storageTypeLabel.Size = new System.Drawing.Size(70, 13);
             this.storageTypeLabel.TabIndex = 8;
-            this.storageTypeLabel.Text = "storageTypeLabel";
+            this.storageTypeLabel.Text = "Storage Type";
             // 
             // textBox1
             // 
@@ -185,9 +161,9 @@ namespace NASFileTransfer.Forms
             this.filesUsedLabel.AutoSize = true;
             this.filesUsedLabel.Location = new System.Drawing.Point(119, 494);
             this.filesUsedLabel.Name = "filesUsedLabel";
-            this.filesUsedLabel.Size = new System.Drawing.Size(76, 13);
+            this.filesUsedLabel.Size = new System.Drawing.Size(62, 13);
             this.filesUsedLabel.TabIndex = 14;
-            this.filesUsedLabel.Text = "filesUsedLabel";
+            this.filesUsedLabel.Text = "Files Used:";
             // 
             // requiredSpaceLabel
             // 
@@ -195,9 +171,9 @@ namespace NASFileTransfer.Forms
             this.requiredSpaceLabel.AutoSize = true;
             this.requiredSpaceLabel.Location = new System.Drawing.Point(67, 523);
             this.requiredSpaceLabel.Name = "requiredSpaceLabel";
-            this.requiredSpaceLabel.Size = new System.Drawing.Size(102, 13);
+            this.requiredSpaceLabel.Size = new System.Drawing.Size(84, 13);
             this.requiredSpaceLabel.TabIndex = 15;
-            this.requiredSpaceLabel.Text = "requiredSpaceLabel";
+            this.requiredSpaceLabel.Text = "Required Space:";
             // 
             // availableSpaceLabel
             // 
@@ -205,9 +181,9 @@ namespace NASFileTransfer.Forms
             this.availableSpaceLabel.AutoSize = true;
             this.availableSpaceLabel.Location = new System.Drawing.Point(63, 550);
             this.availableSpaceLabel.Name = "availableSpaceLabel";
-            this.availableSpaceLabel.Size = new System.Drawing.Size(106, 13);
+            this.availableSpaceLabel.Size = new System.Drawing.Size(88, 13);
             this.availableSpaceLabel.TabIndex = 16;
-            this.availableSpaceLabel.Text = "availableSpaceLabel";
+            this.availableSpaceLabel.Text = "Available Space:";
             // 
             // logOutputLabel
             // 
@@ -215,9 +191,9 @@ namespace NASFileTransfer.Forms
             this.logOutputLabel.AutoSize = true;
             this.logOutputLabel.Location = new System.Drawing.Point(591, 328);
             this.logOutputLabel.Name = "logOutputLabel";
-            this.logOutputLabel.Size = new System.Drawing.Size(79, 13);
+            this.logOutputLabel.Size = new System.Drawing.Size(64, 13);
             this.logOutputLabel.TabIndex = 17;
-            this.logOutputLabel.Text = "logOutputLabel";
+            this.logOutputLabel.Text = "Log Output:";
             // 
             // textBox5
             // 
@@ -234,7 +210,7 @@ namespace NASFileTransfer.Forms
             this.isTransferOkLabel.Name = "isTransferOkLabel";
             this.isTransferOkLabel.Size = new System.Drawing.Size(93, 13);
             this.isTransferOkLabel.TabIndex = 19;
-            this.isTransferOkLabel.Text = "isTransferOkLabel";
+            this.isTransferOkLabel.Text = "Transfer Status:";
             // 
             // progressBar1
             // 
@@ -270,13 +246,11 @@ namespace NASFileTransfer.Forms
             this.Controls.Add(this.usrEmailTextBox);
             this.Controls.Add(this.btnLogin);
             this.Name = "AppForm";
-            this.Text = "Form1";
+            this.Text = "NAS File Transfer";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
-        #endregion
 
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox usrEmailTextBox;
@@ -288,7 +262,7 @@ namespace NASFileTransfer.Forms
         private System.Windows.Forms.Label loggedInAsLabel;
         private System.Windows.Forms.Label storageTypeLabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        public System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
@@ -301,4 +275,3 @@ namespace NASFileTransfer.Forms
         private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
-

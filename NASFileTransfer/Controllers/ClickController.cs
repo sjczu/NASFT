@@ -37,7 +37,13 @@ namespace NASFileTransfer.Controllers
         {
             // Call GoogleDriveService to fetch files from GDrive
             var files = await GoogleDriveService.GetFilesAsync();
+
             // Populate the UI with file options for user to select
+            _form.checkedListBox1.Items.Clear();
+            foreach (var file in files)
+            {
+                _form.checkedListBox1.Items.Add(file);
+            }
         }
 
         public async Task TransferClickAsync()

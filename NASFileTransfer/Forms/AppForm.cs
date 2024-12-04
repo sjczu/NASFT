@@ -6,8 +6,6 @@ namespace NASFileTransfer.Forms
 {
     public partial class AppForm : Form
     {
-        
-
         public AppForm()
         {
             InitializeComponent();
@@ -42,7 +40,7 @@ namespace NASFileTransfer.Forms
 
         private void usrEmailTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            // Handle text change event if needed
         }
     }
 }
